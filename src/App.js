@@ -3,9 +3,10 @@ import './App.css';
 
 //styled
 import {Title, GlobalStyle} from "./styles"
-import WatchList from './components/WatchList';
-import WatchedList from './components/WatchedList';
+
+//Components
 import AddButton from './components/buttons/AddButton';
+import MovieList from './components/MovieList';
 
 function App() {
   return (
@@ -20,8 +21,8 @@ function App() {
 
       <div className="container">
       <div className="row">
-      <WatchList />
-      <WatchedList />
+      <MovieList type={true} />
+      <MovieList type={false} />
       </div>
     </div>
     </div>
