@@ -1,11 +1,17 @@
-import React from 'react';
+import React from "react";
 
-const DeleteButton = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+//Styles
+import { DeleteButtonStyled } from "../../styles";
+
+//Store
+import movieStore from "../../stores/movieStore";
+
+const DeleteButton = ({ movie }) => {
+  return (
+    <DeleteButtonStyled>
+      <h6 onClick={() => movieStore.deleteMovie(movie)}>Delete</h6>
+    </DeleteButtonStyled>
+  );
 };
 
 export default DeleteButton;

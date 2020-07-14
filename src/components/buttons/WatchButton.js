@@ -1,11 +1,18 @@
-import React from 'react';
+import React from "react";
+import { observer } from "mobx-react";
 
-const WatchButton = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+//Store
+import movieStore from "../../stores/movieStore";
+
+//Styles
+import { WatchButtonStyled } from "../../styles";
+
+const WatchButton = ({ movie, label }) => {
+  return (
+    <WatchButtonStyled>
+      <h6 onClick={() => movieStore.moveMovie(movie)}>{label}</h6>
+    </WatchButtonStyled>
+  );
 };
 
-export default WatchButton;
+export default observer(WatchButton);
