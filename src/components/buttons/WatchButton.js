@@ -10,7 +10,7 @@ import { WatchButtonStyled } from "../../styles";
 const WatchButton = ({ movie, label }) => {
   return (
     <WatchButtonStyled>
-      <h6 onClick={() => movieStore.moveMovie(movie.id)}>{label}</h6>
+      <h6 onClick={() => movieStore.moveMovie(movie)}>{label}</h6>
     </WatchButtonStyled>
   );
 };
