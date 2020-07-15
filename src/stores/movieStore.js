@@ -7,11 +7,11 @@ class MovieStore {
   movies = movies;
 
   deleteMovie = (movie) => {
-      this.movies = this.movies.filter((_movie) => _movie.id !== movie.id);
+      this.movies = this.movies.filter((_movie) => _movie.id !== movie);
   }
 
   moveMovie = (movie) => {
-    const foundMovie = this.movies.find((_movie) => _movie.id === movie.id);
+    const foundMovie = this.movies.find((_movie) => (_movie.id === movie));
     foundMovie.watched = !foundMovie.watched;
   };
 

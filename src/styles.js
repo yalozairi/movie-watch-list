@@ -59,7 +59,7 @@ export const DeleteSpanner = styled.span`
 export const WatchButtonStyled = styled.div`
   text-align: center;
   padding: 2px 5px;
-  margin-bottom: -3px;
+  margin-bottom: -7px;
   :hover {
     cursor: pointer;
   }
@@ -68,7 +68,7 @@ export const WatchButtonStyled = styled.div`
 export const DeleteButtonStyled = styled.div`
   text-align: center;
   padding: 2px 5px;
-  margin-bottom: -3px;
+  margin-bottom: -6px;
   :hover {
     cursor: pointer;
   }
@@ -86,4 +86,19 @@ export const AddButtonWrapper = styled.div`
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+`;
+
+export const AnasIsDumb = styled.input`
+margin-bottom: 5px;
+padding-left: 3px;
+width: 99.99%;
+border-radius: 8px;
+border: 1.5px solid black;
+height: 45px;
+
+`;
+
+export const WarningMessage = styled.h4`
+margin-top: 10px;
+
 `;
