@@ -9,8 +9,8 @@ import DeleteButton from "./buttons/DeleteButton";
 import { DeleteSpanner, Spanner, ListTitle, ListItem } from "../styles";
 
 const MovieList = ({ type, filteredMovies }) => {
-
-  const watchList = filteredMovies.filter((movie) => movie.watched === false)
+  const watchList = filteredMovies
+    .filter((movie) => movie.watched === false)
     .map((movie) => (
       <li className="list-group-item d-flex justify-content-between align-items-center">
         <h4>{movie.name}</h4>
@@ -28,8 +28,9 @@ const MovieList = ({ type, filteredMovies }) => {
         </div>
       </li>
     ));
-   
-  const watchedList = filteredMovies.filter((movie) => movie.watched === true)
+
+  const watchedList = filteredMovies
+    .filter((movie) => movie.watched === true)
     .map((movie) => (
       <li className="list-group-item d-flex justify-content-between align-items-center">
         <h4>{movie.name}</h4>
@@ -50,25 +51,21 @@ const MovieList = ({ type, filteredMovies }) => {
 
   return type === true ? (
     <>
-      
-        <ul className="list-group">
-          <ListItem className="list-group-item active">
-            <ListTitle>Movies To Watch ({watchList.length})</ListTitle>
-          </ListItem>
-          {watchList}
-        </ul>
-      
+      <ul className="list-group">
+        <ListItem className="list-group-item active">
+          <ListTitle>Movies To Watch ({watchList.length})</ListTitle>
+        </ListItem>
+        {watchList}
+      </ul>
     </>
   ) : (
     <>
-      
-        <ul className="list-group">
-          <ListItem className="list-group-item active">
-            <ListTitle>Watched Movies ({watchedList.length})</ListTitle>
-          </ListItem>
-          {watchedList}
-        </ul>
-    
+      <ul className="list-group">
+        <ListItem className="list-group-item active">
+          <ListTitle>Watched Movies ({watchedList.length})</ListTitle>
+        </ListItem>
+        {watchedList}
+      </ul>
     </>
   );
 };

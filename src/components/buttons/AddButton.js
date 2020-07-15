@@ -19,7 +19,7 @@ const AddButton = () => {
         aria-label="Add a movie to your watchlist!"
         aria-describedby="basic-addon2"
         onChange={(event) => setInput(event.target.value)}
-        style={{border: "1.5px solid grey"}}
+        style={{ border: "1.5px solid grey" }}
       />
       <div className="input-group-append">
         <AddButtonStyled
@@ -27,7 +27,7 @@ const AddButton = () => {
           type="button"
           onClick={() => (input === "" ? null : movieStore.addMovie(input))}
         >
-          Add <AddButtonIcon style={{color: "red"}} />
+          Add <AddButtonIcon style={{ color: "red" }} />
         </AddButtonStyled>
       </div>
     </div>

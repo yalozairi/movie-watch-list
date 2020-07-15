@@ -25,8 +25,8 @@ export const AddButtonIcon = styled(GrAdd)`
 `;
 
 export const AddButtonStyled = styled.button`
-color: black;
-background-color: #1faabf;
+  color: black;
+  background-color: #1faabf;
 
   :hover {
     color: black;
@@ -51,7 +51,7 @@ export const DeleteSpanner = styled.span`
   color: #fff;
   padding: 0px;
   :hover {
-    background-color: #B83227;
+    background-color: #b83227;
     cursor: pointer;
   }
 `;
@@ -89,16 +89,19 @@ export const AddButtonWrapper = styled.div`
 `;
 
 export const AnasIsDumb = styled.input`
-margin-bottom: 5px;
-padding-left: 3px;
-width: 99.99%;
-border-radius: 8px;
-border: 1.5px solid black;
-height: 45px;
-
+  margin-bottom: 5px;
+  padding-left: 3px;
+  width: 99.99%;
+  border-radius: 8px;
+  border: 1.5px solid black;
+  height: 45px;
 `;
 
 export const WarningMessage = styled.h4`
-margin-top: 10px;
+  margin-top: 10px;
+`;
 
+export const Label = styled.label`
+  padding-right: 0px;
+  padding-left: 0px;
 `;
